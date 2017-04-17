@@ -6,7 +6,7 @@ angular.module('app').service('shopService',function($http,$q) {
         method: 'GET',
         url: 'http://practiceapi.devmounta.in/products'
     }).then(function(response) {
-       console.log('this is response: ',response);
+       
       deferred.resolve(response);
     });
       return deferred.promise;
