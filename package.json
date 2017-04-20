@@ -1,0 +1,23 @@
+{
+  "name": "angular-assessment",
+  "version": "1.0.0",
+  "description": "This assessment is intended to assess your skills and knowledge of Angular concepts.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabeAboy/angularEComerse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabeAboy/angularEComerse/issues"
+  },
+  "homepage": "https://github.com/GabeAboy/angularEComerse#readme"
+}
