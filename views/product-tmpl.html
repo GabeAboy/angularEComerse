@@ -1,14 +1,15 @@
         <!--Product Image-->
-        <!--Product Image click collapse the image-->
-        <div class="product-grid__item   grid__item one-half large--one-third" ng-click='clickedMe(shop.id)' ng-repeat='shop in shopListing'>
+        <!--Product Image click collapse the image
+      ng-click='clickedMe(shop.id)'-->
+        <div class="product-grid__item   grid__item one-half large--one-third"  ng-repeat='shop in shopListing'>
 
             <!--Repeat over your data and display it below -->
             <!--Product Image-->
             <!--Product Image click collapse the image-->
-            <a class="product-grid__product" >
-                <img src="{{shop.image}}" class="product-grid__img"   sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" alt="">
+            <a class="product-grid__product" ng-click="changer(shop)" >
+                <img src="{{shop.image}}" class="product-grid__img"   ng-hide = 'ngClick'sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" alt="">
             </a>
-            <a class="product-grid__product">
+            <a class="product-grid__product"  ng-click="changer()" ng-show='ngClick'>
                 show image
             </a>
 

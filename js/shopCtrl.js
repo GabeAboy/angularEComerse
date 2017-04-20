@@ -6,6 +6,14 @@ angular.module('app').controller('shopCtrl',function($scope,shopService,$state) 
     console.log($scope.shopListing);
 
   })
+  $scope.ngClick = true;
+  $scope.changer=function() {
+    this.ngClick = ! this.ngClick
+    console.log('enter',$scope.ngClick);
+
+    return $scope.ngClick;
+  }
+
   $scope.clickedMe=function(data) {
     $scope.id=data
     console.log($scope.id);
