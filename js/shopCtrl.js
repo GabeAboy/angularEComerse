@@ -14,8 +14,10 @@ angular.module('app').controller('shopCtrl',function($scope,shopService,$state) 
     return $scope.ngClick;
   }
 
+
   $scope.clickedMe=function(data) {
-    $scope.id=data
+    console.log(data);
+    $scope.id=data.id
     console.log($scope.id);
     $state.transitionTo('details',{id:$scope.id})
   }
